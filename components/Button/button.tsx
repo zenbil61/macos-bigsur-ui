@@ -1,15 +1,8 @@
 import React from 'react';
+import IButton from './button.interface';
+
 // import "./button.scss";
 
-interface IButton {
-    type?: string;
-    width?: number;
-    size?: string;
-    disabled?: boolean;
-    block?: boolean;
-    children: string;
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-}
 const Button: React.FC<IButton> = ({
     type = 'primary',
     size,

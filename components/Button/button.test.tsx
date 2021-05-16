@@ -1,20 +1,21 @@
-import { render } from '@testing-library/react';
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import IButton from './button.interface';
 import Button from './button';
 
-test('Button component tests', () => {
-    const primaryButton = render(<Button type="primary">Primary Button</Button>);
-    const secondaryButton = render(<Button type="secondary">Secondary Button</Button>);
-    const successButton = render(<Button type="success">Success Button</Button>);
-    const dangerButton = render(<Button type="secondary">Danger Button</Button>);
-    const infoButton = render(<Button type="info">Info Button</Button>);
-    const warningButton = render(<Button type="warning">Warning Button</Button>);
-    const lightButton = render(<Button type="light">Light Button</Button>);
+const TestButton = ({ onClick, children }: IButton) => <Button onClick={onClick}> {children}</Button>;
 
-    expect(primaryButton).toMatchSnapshot();
-    expect(secondaryButton).toMatchSnapshot();
-    expect(successButton).toMatchSnapshot();
-    expect(dangerButton).toMatchSnapshot();
-    expect(infoButton).toMatchSnapshot();
-    expect(warningButton).toMatchSnapshot();
-    expect(lightButton).toMatchSnapshot();
+test('Primary Button Test', () => {
+    // TODO: trial test
+
+    const handleClick = jest.fn();
+
+    render(<TestButton onClick={handleClick}>Primary Button</TestButton>);
+    const buttonEl = screen.getByText('Primary Button');
+    fireEvent.click(buttonEl);
+
+    expect(buttonEl).toBeInTheDocument();
+    expect(buttonEl).toHaveClass('primary');
+    expect(buttonEl).toHaveTextContent('Primary Button');
+    expect(handleClick).toHaveBeenCalledTimes(1);
 });

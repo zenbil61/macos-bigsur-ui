@@ -7,5 +7,6 @@ echo -e "\n${yellow}Executing pre-commit hook${no_color}\n"
 pretty-quick --staged
 eslint . --fix
 tsc --noEmit
+npm test
 git add
 echo -e "\n${yellow}Finish pre-commit hook${no_color}\n"
