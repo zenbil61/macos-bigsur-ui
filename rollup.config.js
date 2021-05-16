@@ -25,8 +25,9 @@ export default {
   output: [
     {
       // dir:"dist", // for chunk
+      name:"macosBigsurUi",
       file: "dist/index.js",
-      format: "cjs", // commonJS
+      format: "umd", // commonJS
       sourcemap: true,
       //external: ["**/*.test.*"],
     },
