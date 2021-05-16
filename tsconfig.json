@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "esm",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    //"target": "es5",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["components"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "esm",
+    "lib",
+    "**/*.stories.*",
+    "**/*.test.*"
+  ]
+}

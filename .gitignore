@@ -1,0 +1,5 @@
+dist
+esm
+lib
+node_modules
+example/node_modules

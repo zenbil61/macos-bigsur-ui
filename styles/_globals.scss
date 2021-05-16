@@ -1,0 +1,31 @@
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+@import "./animations";
+@import url(//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text);
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+body {
+  //font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+
+  font-family: "SF Pro Text";
+  font-size: 15px;
+  font-weight: 500;
+}
+h1 {
+  font-size: 30px;
+  color: $blue;
+}
+.block {
+  width: 100%;
+}
+
+.icon {
+  width: 11px;
+  height: 12px;
+}

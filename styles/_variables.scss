@@ -1,0 +1,52 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$red: #f96057;
+$red-light: #fba09a;
+$orange: #f8a34d;
+$orange-light: #fbc894;
+$yellow: #f8ce52;
+$yellow-light: #fbe297;
+$green: #5fcf65;
+$green-light: #9fe2a3;
+$blue: #488ef7;
+$blue-light: #91bbfa;
+$purple: #b470d4;
+$purple-light: #d2a9e5;
+$gray: #9d9ca0;
+$gray-light: #c4c4c6;
+
+/** for ui kit**/
+$primary-90: #232526;
+$primary-50: #797979;
+$primary-10: #e5e5e5;
+$primary-3: #f4f4f4;
+
+$primary: #017aff;
+$secondary: $primary-90;
+$success: $green;
+$danger: $red;
+$info: $blue-light;
+$warning: $orange;
+$light: $gray-100;
+$dark: $gray-900;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'danger': $danger,
+    'info': $info,
+    'warning': $warning,
+    'light': $light,
+    'dark': $dark,
+) !default;
