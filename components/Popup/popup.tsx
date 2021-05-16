@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
 
 interface IPopup {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }
 
-const Button: React.FC<IPopup> = ({ children }: IPopup) => (
-  <div>{children}</div>
-);
+const Button: React.FC<IPopup> = ({ children }: IPopup) => <div>{children}</div>;
 
 export default Button;
