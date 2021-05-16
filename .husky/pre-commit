@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+yellow='\033[0;33m'
+no_color='\033[0m'
+
+echo -e "\n${yellow}Executing pre-commit hook${no_color}\n"
+
+echo -e "\n${yellow}Finish pre-commit hook${no_color}\n"
