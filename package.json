@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "test": "jest .",
+        "test:coverage": "jest . --coverage",
         "prepare": "husky install",
         "clean": "rm -rf lib && rm -rf esm && rm -rf dist",
         "install:all": "npm i && cd example && npm i",

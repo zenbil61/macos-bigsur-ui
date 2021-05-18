@@ -40,4 +40,4 @@ const Segmented: React.FC<ISegmented> = ({ children, onChange, block, activeValu
 );
 
 export default Segmented;
-export { SegmentedItem };
+export { SegmentedItem, ISegmented, ISegmentedItem };

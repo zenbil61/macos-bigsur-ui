@@ -36,18 +36,18 @@ export default {
     peerDepsExternal(),
     resolve(),
     typescript(),
-    scss({
-      output: true,
-      output: "./dist/bundle.css",
-      sourceMap: true,
-      failOnError: true,
-      outputStyle: "compressed",
-      //include: ["/**/*.scss"],
-      include: ["**/*.scss"],
-      prefix: `
-          @import './styles/globals';
-        `,
-    }),
+   // scss({
+   //   output: true,
+   //   output: "./dist/bundle.css",
+   //   sourceMap: true,
+   //   failOnError: true,
+   //   outputStyle: "compressed",
+   //   //include: ["/**/*.scss"],
+   //   include: ["**/*.scss"],
+   //   prefix: `
+   //       @import './styles/globals';
+   //     `,
+   // }),
     commonjs({
       exclude: ["node_modules", "dist", "esm", "lib"],
       ignoreGlobal: true,
