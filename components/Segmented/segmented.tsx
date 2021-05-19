@@ -1,19 +1,6 @@
 import React from 'react';
-// import "./segmented.scss";
+import { ISegmented, ISegmentedItem } from './segmented.interface';
 
-interface ISegmented {
-    children: React.ReactNode;
-    activeValue: string;
-    block?: boolean;
-    onChange?: (data: string) => void;
-    type?: string;
-}
-interface ISegmentedItem {
-    children: React.ReactNode;
-    active?: boolean;
-    onClick?: (data: string) => void;
-    value: string;
-}
 const SegmentedItem: React.FC<ISegmentedItem> = ({ active, onClick, value, children }: ISegmentedItem) => (
     <li
         aria-hidden="true"

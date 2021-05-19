@@ -5,7 +5,7 @@ import IButton from './button.interface';
 
 const Button: React.FC<IButton> = ({
     type = 'primary',
-    size,
+    size = 'md',
     disabled,
     block,
     children,
@@ -16,7 +16,7 @@ const Button: React.FC<IButton> = ({
     ${type} 
     ${block ? 'block' : ''}
     ${disabled ? 'disabled' : ''} 
-    ${size ? `btn-${size}` : ''}`;
+    ${`btn-${size}`}`;
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         onClick?.(e);

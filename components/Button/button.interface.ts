@@ -1,9 +1,8 @@
 import React from 'react';
+import { theme, size } from '../_utils/types';
 
-interface IButton {
-    type?: string;
+interface IButton extends theme, size {
     width?: number;
-    size?: string;
     disabled?: boolean;
     block?: boolean;
     children: React.ReactNode;
